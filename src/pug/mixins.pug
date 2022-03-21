@@ -4,7 +4,7 @@ mixin video(vid, cover, autoplay: false)
     video.video.video__hidden(loop='loop', width='850', autoplay=`${autoplay ? 'autoplay' : '0'}`, control)
       source(src=`video/${vid}`, type='video/webm')
     .video__cover
-      img(src=`img/${cover}` alt='')
+      img(src=`img/${cover}`, alt='')
 
 
 mixin ytvideo(id, img)
