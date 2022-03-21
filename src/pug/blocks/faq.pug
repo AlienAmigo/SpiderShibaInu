@@ -1,0 +1,7 @@
+section.faq(id='faq')
+  h2.faq__title Frequently Asked Questions
+  .faq__wrapper
+    each item in FAQItems
+      .faq-item
+        .faq-item__question= item.question
+        .faq-item__question= item.answer

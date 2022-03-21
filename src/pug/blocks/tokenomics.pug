@@ -1,0 +1,10 @@
+section.tokenomics
+  h2.tokenomics__title Tokenomics
+  .tokenomics__wrapper
+    each item in TokenomicsItems
+      .tokenomics-item
+        .tokenomics-item__graph-wrapper
+          each el in item.values
+            .tokenomics-item__graph(style=`width: calc(1% * ${item.values.value}); color: ${item.values.color};`)
+        h4.tokenomics-item__title= item.title
+        p.tokenomics-item__text= item.text

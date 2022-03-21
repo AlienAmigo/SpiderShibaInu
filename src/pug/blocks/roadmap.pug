@@ -1,0 +1,9 @@
+section.roadmap(id='roadmap')
+  h2.roadmap__title Roadmap
+  ul.roadmap__list
+    each item in RoadmapItems
+      li.roadmap-item
+        h4.roadmap-item__title= item.title
+        ul.roadmap-item__list
+          each el in item.items
+            li.roadmap-item__list-item= el

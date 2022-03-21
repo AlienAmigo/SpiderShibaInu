@@ -1,0 +1,8 @@
+section.team(id='team')
+  h2.team__title Team
+  ul.team__sliders
+    each item in TeamItems
+      li.team-slider
+        img.team-slider__img(src=`img/${item.img}`, alt=`${item.name}`)
+        h4.team-slider__name= item.name
+        p.team-slider__position= item.position
