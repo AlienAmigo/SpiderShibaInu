@@ -5,14 +5,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    &::selection {
-    }
   }
 
-  &__inner {}
+  &__inner {
+    display: flex;
+  }
 
-  &__content {}
+  &__content {
+    display: flex;
+  }
 
-  &__footer-wrapper {}
+  &__footer-wrapper {
+    display: flex;
+  }
 }
