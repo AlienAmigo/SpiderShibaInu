@@ -1,0 +1,16 @@
+.ticker {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 30px;
+  background: #5a4039;
+  overflow: hidden;
+
+  &__text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 245, 0, 0.6);
+  }
+}
