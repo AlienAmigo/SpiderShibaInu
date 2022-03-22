@@ -1,8 +1,9 @@
 {
-  "processors": ["stylelint-processor-styled-components"],
-  "extends": ["stylelint-config-recommended-scss", "stylelint-config-styled-components"],
-  "customSyntax": "postcss-scss",
-  "rules": {
-    "at-rule-no-unknown": null
-  }
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "bracketSameLine": true,
+  "arrowParens": "avoid"
 }

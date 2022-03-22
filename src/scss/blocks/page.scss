@@ -9,13 +9,17 @@
 
   &__inner {
     display: flex;
+    flex: 1;
+    flex-direction: column;
   }
 
   &__content {
     display: flex;
+    flex-direction: column;
   }
 
   &__footer-wrapper {
     display: flex;
+    flex-direction: column;
   }
 }
