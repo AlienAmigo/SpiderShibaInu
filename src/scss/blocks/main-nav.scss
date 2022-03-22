@@ -1,3 +1,50 @@
 .main-nav {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 92px 16px 20px;
+  background: #384d70;
+  overflow-y: auto;
+  transition: top 0.35s ease-in;
+
+  &.active {
+    top: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    @include hover();
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    color: $white-color;
+    opacity: 0.8;
+    text-decoration: none;
+
+    &:visited {
+      color: $white-color;
+    }
+
+    &:active {
+      color: $main-color;
+    }
+  }
 }

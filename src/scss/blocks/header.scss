@@ -1,3 +1,25 @@
 .header {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  &__main-nav-burger {
+    display: flex;
+    z-index: 15;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-image: url('../img/main-menu-burger.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #384d70;
+    transition: background-image 0.35s ease-in;
+    cursor: pointer;
+
+    &.active {
+      background-image: url('../img/main-menu-close.svg');
+    }
+  }
 }

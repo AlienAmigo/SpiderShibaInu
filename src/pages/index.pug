@@ -13,14 +13,14 @@ block header
       a.logo__link(href='/')
         img.logo__img(src='img/logo.svg', alt='Spidershiba Inu logo')
 
-    .header__burger
-    nav.main-nav
+    button.header__main-nav-burger(id='main-nav-burger')
+    nav.main-nav(id='main-nav')
       ul.main-nav__list
         each item in MainNavItems
           li.main-nav__item
             a.main-nav__link(href=`${item.link}`)= item.title
 
-      a.btn.btn--join-community(href='#') Join Community
+      a.btn.btn--join-community(href='#', id='join-community-btn') Join Community
 
 block content
 
@@ -28,16 +28,16 @@ block content
 
   .ticker(id='ticker')
 
-  include ../pug/blocks/more-sec.pug
-  include ../pug/blocks/how-it-works.pug
-  include ../pug/blocks/play-to-earn.pug
-  include ../pug/blocks/why-invest.pug
-  include ../pug/blocks/roadmap.pug
-  include ../pug/blocks/team.pug
-  include ../pug/blocks/partners-and-investors.pug
-  include ../pug/blocks/tokenomics.pug
-  include ../pug/blocks/faq.pug
-  include ../pug/blocks/community.pug
+  //include ../pug/blocks/more-sec.pug
+  //include ../pug/blocks/how-it-works.pug
+  //include ../pug/blocks/play-to-earn.pug
+  //include ../pug/blocks/why-invest.pug
+  //include ../pug/blocks/roadmap.pug
+  //include ../pug/blocks/team.pug
+  //include ../pug/blocks/partners-and-investors.pug
+  //include ../pug/blocks/tokenomics.pug
+  //include ../pug/blocks/faq.pug
+  //include ../pug/blocks/community.pug
 
 
 
