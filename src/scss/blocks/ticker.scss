@@ -5,12 +5,27 @@
   height: 30px;
   background: #5a4039;
   overflow: hidden;
+  white-space: nowrap;
+
+  @keyframes scroll {
+    0% {
+      transform: translate(100vw, 0);
+    }
+
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
 
   &__text {
+    display: flex;
+    width: max-content;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
+    line-break: strict;
     text-transform: uppercase;
     color: rgba(255, 245, 0, 0.6);
+    animation: scroll 5s linear infinite;
   }
 }
