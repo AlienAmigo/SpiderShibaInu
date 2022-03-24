@@ -20,3 +20,15 @@
     object-position: left center;
   }
 }
+
+@media screen and (min-width: $screen-lg) {
+  .logo {
+    width: 253px;
+    height: 50px;
+    margin: 0;
+
+    &__link {
+      margin: 0;
+    }
+  }
+}

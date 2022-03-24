@@ -1,8 +1,10 @@
 .header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 5;
   top: 0;
   left: 0;
   padding: 10px 15px;
@@ -24,5 +26,29 @@
     &.active {
       background-image: url('../img/main-menu-close.svg');
     }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .header {
+    &__main-nav-burger {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .header {
+    min-height: 100px;
+    padding: 15px 90px;
+  }
+}
+
+@media screen and (min-width: $screen-xl) {
+  .header {
+    max-width: $screen-xl;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 15px 90px;
   }
 }

@@ -29,3 +29,21 @@
     animation: scroll 5s linear infinite;
   }
 }
+
+@media screen and (min-width: $screen-sm) {
+  .ticker {
+    &__text {
+      animation: scroll 10s linear infinite;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .ticker {
+    height: 38px;
+
+    &__text {
+      animation: scroll 15s linear infinite;
+    }
+  }
+}

@@ -43,3 +43,47 @@
     line-height: 21px;
   }
 }
+
+@media screen and (min-width: $screen-sm) {
+  .btn {
+    &--join-community {
+      align-self: center;
+      width: 170px;
+      min-width: 170px;
+      height: 40px;
+      margin: 0 0 0 30px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .btn {
+    &--join-community {
+      margin-left: 70px;
+    }
+
+    &--banner-join {
+      flex: 2;
+      width: auto;
+      height: 80px;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &--banner-more {
+      flex: 3;
+      width: auto;
+      height: 80px;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}
